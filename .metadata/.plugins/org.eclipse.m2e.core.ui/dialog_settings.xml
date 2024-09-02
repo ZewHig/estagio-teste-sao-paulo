@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\mathe\OneDrive\Documentos\Projects\APP-Salao\salao-back"/>
+			<item value="C:\Users\mathe\OneDrive\Documentos\Projects\APP-Salao\demo"/>
+			<item value="C:\Users\mathe\OneDrive\Documentos\Projects\APP-Salao\backEnd-salao"/>
+			<item value="C:\Users\mathe\OneDrive\Documentos\Projects\toDo\back-end-toDo"/>
+			<item value="C:\Users\mathe\OneDrive\Documentos\Projects\crud-app\back-end\crud-app"/>
+			<item value="C:\Users\mathe\Downloads\projetoTeste\projetoTeste"/>
+			<item value="C:\Users\mathe\Downloads\demo\demo"/>
+			<item value="C:\Users\mathe\OneDrive\Documentos\JavaProjects\treinoSpring_Restaurante\restaurante"/>
+			<item value="C:\Users\mathe\Downloads\algaworks\algaworks"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

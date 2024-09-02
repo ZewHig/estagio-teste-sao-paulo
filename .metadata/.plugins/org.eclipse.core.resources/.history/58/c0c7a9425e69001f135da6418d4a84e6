@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module estagioTeste {
+	requires java.json;
+}

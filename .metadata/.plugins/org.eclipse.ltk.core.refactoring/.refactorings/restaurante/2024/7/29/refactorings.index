@@ -1,0 +1,31 @@
+1721165614824	Delete element
+1721322435693	Delete element
+1721323411761	Delete element
+1721323659917	Delete element
+1721324739946	Delete element
+1721325042927	Rename field 'cozinhaRepository'
+1721325071045	Rename field 'cadastroCozinhaService'
+1721325118010	Rename local variable 'cozinhaId'
+1721325145690	Rename local variable 'cozinha'
+1721325177394	Rename local variable 'cozinha'
+1721325240790	Rename local variable 'cozinhaId'
+1721325246751	Rename local variable 'cozinha'
+1721325257874	Rename local variable 'cozinhaAtual'
+1721325282234	Rename local variable 'cozinhaSalva'
+1721325342328	Rename field 'cozinhaRepository'
+1721325368338	Rename local variable 'cozinha'
+1721325380120	Rename local variable 'cozinhaId'
+1721415229155	Delete element
+1721415603352	Rename field 'cozinhaRepository'
+1721415643899	Rename field 'cadastroCozinhaService'
+1721415687956	Rename local variable 'cozinhaId'
+1721415698318	Rename local variable 'cozinha'
+1721415808743	Rename local variable 'cozinha'
+1721415933344	Rename field 'formaPagamentoRepository'
+1721415955390	Rename local variable 'formaPagamento'
+1721416050475	Rename local variable 'formaPagamentoId'
+1721416087612	Rename local variable 'cozinhaId'
+1721416107892	Rename local variable 'cozinha'
+1721416116554	Rename local variable 'cozinhaAtual'
+1721416134181	Rename local variable 'cozinhaSalva'
+1721416148695	Rename local variable 'cozinhaId'

@@ -1,0 +1,71 @@
+package estagioTeste.questao3;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class FaturamentoDistribuidora {
+
+    public static void main(String[] args) {
+        try {
+            
+        	int i=0;
+            String filename="faturamento.json";
+            Path pathToFile = Paths.get(filename);
+            System.out.println(pathToFile.toAbsolutePath());
+            
+            String content = new String(Files.readAllBytes(Paths.get("faturamento.json")));
+
+            // Converter o conteúdo para um JSONArray
+            JSONArray faturamentoArray = new JSONArray(content);
+
+            // Inicializando variáveis
+            double menorValor = Double.MAX_VALUE;
+            double maiorValor = Double.MIN_VALUE;
+            double soma = 0;
+            int diasComFaturamento = 0;
+
+            // Processando os dados
+            for (int i1 = 0; i1 < faturamentoArray.length(); i1++) {
+                JSONObject diaObj = faturamentoArray.getJSONObject(i1);
+                double valor = diaObj.getDouble("valor");
+
+                if (valor > 0) {
+                    if (valor < menorValor) {
+                        menorValor = valor;
+                    }
+                    if (valor > maiorValor) {
+                        maiorValor = valor;
+                    }
+                    soma += valor;
+                    diasComFaturamento++;
+                }
+            }
+
+            // Calculando a média mensal
+            double mediaMensal = soma / diasComFaturamento;
+
+            // Calculando o número de dias com faturamento superior à média mensal
+            int diasAcimaDaMedia = 0;
+            for (int i = 0; i < faturamentoArray.length(); i++) {
+                JSONObject diaObj = faturamentoArray.getJSONObject(i);
+                double valor = diaObj.getDouble("valor");
+
+                if (valor > mediaMensal) {
+                    diasAcimaDaMedia++;
+                }
+            }
+
+            // Exibindo resultados
+            System.out.println("Menor valor de faturamento: " + menorValor);
+            System.out.println("Maior valor de faturamento: " + maiorValor);
+            System.out.println("Número de dias com faturamento acima da média mensal: " + diasAcimaDaMedia);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
